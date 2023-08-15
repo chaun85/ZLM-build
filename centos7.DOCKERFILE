@@ -4,8 +4,8 @@ FROM centos:7
 
 RUN yum -y install gcc gcc-c++ git wget make && \
     cd /home && \
-    wget https://cmake.org/files/v3.25/cmake-3.25.0-rc4-linux-x86_64.tar.gz && \
-    tar xf cmake-3.25.0-rc4-linux-x86_64.tar.gz && \
-    ln -s /home/cmake-3.20.0-rc2-linux-x86_64/bin/cmake /usr/bin/cmake
+    wget https://cmake.org/files/v3.27/cmake-3.27.2-linux-x86_64.tar.gz && \
+    tar xf cmake-3.27.2-linux-x86_64.tar.gz && \
+    ln -s /home/cmake-3.27.2-linux-x86_64/bin/cmake /usr/bin/cmake
 
 CMD [ "/bin/bash" ]
