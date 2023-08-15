@@ -10,9 +10,9 @@ cd openssl-1.1.1k
 make -j4 
 make install  
 cd ../  
-wget https://codeload.github.com/cisco/libsrtp/tar.gz/refs/tags/v2.4.2  
-tar -xvzf v2.4.2  
-cd libsrtp-2.4.2/  
+wget https://codeload.github.com/cisco/libsrtp/tar.gz/refs/tags/v2.5.0  
+tar -xvzf v2.5.0  
+cd libsrtp-2.5.0/  
 mkdir -p /root/srtp 
 ./configure --prefix=/root/srtp --enable-openssl --with-openssl-dir=/usr/local/openssl  
 make -j4  
